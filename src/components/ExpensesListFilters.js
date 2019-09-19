@@ -8,6 +8,7 @@ export class ExpenseListFilters extends React.Component {
   state = {
     calendarFoucsed: null
   };
+  
   onDatesChange = ({ startDate, endDate }) => {
     this.props.setStartDate(startDate);
     this.props.setEndDate(endDate)
@@ -17,8 +18,9 @@ export class ExpenseListFilters extends React.Component {
     this.setState(() => ({ calendarFoucsed }));
   };
   onTextChange = (e) => {
-    this.props.setTextFilter(e.target.value);
+    this.props.setTextfilter(e.target.value);
   };
+  
   onShortChange = (e) => {
     if (e.target.value === 'date') {
       this.props.sortByDate();
@@ -27,6 +29,7 @@ export class ExpenseListFilters extends React.Component {
     }
 
   }
+  
   render() {
     return (
       <div>
@@ -47,9 +50,7 @@ export class ExpenseListFilters extends React.Component {
         </select>
         <DateRangePicker
           startDate={this.props.filters.startDate}
-          startDateId="your_unique_start_date_id"
           endDate={this.props.filters.endDate}
-          endDateId="your_unique_end_date_id"
           onDatesChange={this.onDatesChange}
           focusedInput={this.state.calendarFoucsed}
           onFocusChange={this.onFocusChange}
