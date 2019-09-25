@@ -9,9 +9,8 @@ app.use(express.static(publicPath));
 
 app.get('/create',(req, res)=>{
     res.sendFile(path.join(publicPath,'index.html'))
-})
-
+});
 
 app.listen(port, () => {
     console.log('server is running')
-});
+}); 
