@@ -19,7 +19,7 @@ export class ExpenseListFilters extends React.Component {
     this.setState(() => ({ calendarFoucsed }));
   };
   onTextChange = (e) => {
-    this.props.setTextfilter(e.target.value);
+    this.props.setTextFilter(e.target.value);
   };
   
   onShortChange = (e) => {
