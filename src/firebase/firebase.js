@@ -87,17 +87,17 @@ database.ref('expenses').push({
 //     console.log(snapshot.val());
 // });
 
-setTimeout(()=>{
-    database.ref('age').set(24);
-},3500);
+// setTimeout(()=>{
+//     database.ref('age').set(24);
+// },3500);
 
-setTimeout(()=>{
-    database.ref().off();
-},5000);
+// setTimeout(()=>{
+//     database.ref().off();
+// },5000);
 
-setTimeout(()=>{
-    database.ref('age').set(28);
-},10000);
+// setTimeout(()=>{
+//     database.ref('age').set(28);
+// },10000);
 
 
 
