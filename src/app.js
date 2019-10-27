@@ -24,7 +24,7 @@ const jsx = (
 
 ReactDOM.render(<p>Loading...</p>, document.getElementById('app'));
 
-store.dispatch(startSetEXpenses()).then(()=> {
+store.dispatch(startSetExpenses()).then(()=> {
     ReactDOM.render(jsx, document.getElementById('app'));
 })
 
