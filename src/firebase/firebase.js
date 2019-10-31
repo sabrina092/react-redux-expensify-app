@@ -17,7 +17,10 @@ firebase.initializeApp(firebaseConfig);
 
 
 const database = firebase.database();
-export{ firebase, database as default}
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+
+
+export{ firebase,googleAuthProvider, database as default}
 //child_added
 // database.ref('expenses').on('child_added',(snapshot)=>{
 //     console.log(snapshot.key, snapshot.val())
@@ -57,7 +60,7 @@ database.ref('expenses')
            ...childSnapshot.val()
        });
       });
-      console.log(expenses)
+      //console.log(expenses)
   });
 
 database.ref('expenses').push({
