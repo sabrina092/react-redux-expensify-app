@@ -1,0 +1,14 @@
+let array1 = [1, 2, 3, 4, 5]; 12345
+let array2 = [6, 7, 8];  678
+
+write a function that take array and return the number
+10^0 = 1
+10^1 = 10
+10^2 = 100
+10^3 = 1000
+......
+
+sum = 12923
+
+write a function that take a number and return an array
+return [1, 2, 9, 2, 3]
